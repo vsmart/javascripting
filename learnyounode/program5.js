@@ -8,7 +8,7 @@ function listFiles(dir, extension, callback){
   fs.readdir(dir, function(err, list) {
     if (err) return callback(err);
     for (i = 0; i < list.length; i++){
-      if (path.extname(list[i]) == extension) {
+      if (path.extname(list[i]) == ('.' + extension)) {
         dirList.push(list[i]);
       }
     }

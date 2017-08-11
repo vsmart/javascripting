@@ -1,6 +1,6 @@
 var listFiles = require('./program5');
 var dir = process.argv[2];
-var extension = '.' + process.argv[3];
+var extension = process.argv[3];
 
 listFiles(dir, extension,
     function(err, data) {
